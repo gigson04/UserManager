@@ -32,6 +32,7 @@
             label1 = new Label();
             btnNew = new Button();
             button1 = new Button();
+            btnRefresh = new Button();
             ((System.ComponentModel.ISupportInitialize)dgViewUsers).BeginInit();
             SuspendLayout();
             // 
@@ -43,7 +44,6 @@
             dgViewUsers.Name = "dgViewUsers";
             dgViewUsers.Size = new Size(465, 231);
             dgViewUsers.TabIndex = 0;
-    
             // 
             // label1
             // 
@@ -82,11 +82,26 @@
             button1.Text = "Details";
             button1.UseVisualStyleBackColor = false;
             // 
+            // btnRefresh
+            // 
+            btnRefresh.BackColor = SystemColors.HotTrack;
+            btnRefresh.Cursor = Cursors.No;
+            btnRefresh.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRefresh.ForeColor = Color.Cornsilk;
+            btnRefresh.Location = new Point(42, 291);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(114, 35);
+            btnRefresh.TabIndex = 9;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = false;
+            btnRefresh.Click += btnRefresh_Click;
+            // 
             // ListForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(567, 328);
+            Controls.Add(btnRefresh);
             Controls.Add(button1);
             Controls.Add(btnNew);
             Controls.Add(label1);
@@ -105,5 +120,6 @@
         private Label label1;
         private Button btnNew;
         private Button button1;
+        private Button btnRefresh;
     }
 }

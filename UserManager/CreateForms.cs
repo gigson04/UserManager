@@ -32,6 +32,7 @@ namespace UserManager
                 else
                 {
                     MessageBox.Show("Failed to create user. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.Close();
                 }
             }
             

@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace UserManager
 {
+
     public partial class ListForm : Form
     {
+        UserRepository userRepository = new UserRepository();
+
         public ListForm()
         {
             InitializeComponent();
@@ -26,13 +29,19 @@ namespace UserManager
         private void ListForm_Load(object sender, EventArgs e)
         {
             MessageBox.Show("Welcome to User Manager!");
-            UserRepository userRepository = new UserRepository();
+            NewMethod();
+        }
 
+        private void NewMethod()
+        {
             List<UserModel> users = userRepository.GetAll();
             dgViewUsers.DataSource = users;
         }
 
-       
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+
         }
-    
+    }
+
 }
