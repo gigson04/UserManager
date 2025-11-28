@@ -19,7 +19,8 @@ namespace UserManager
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-
+            CreateForms form = new CreateForms();
+            form.ShowDialog();
         }
 
         private void ListForm_Load(object sender, EventArgs e)

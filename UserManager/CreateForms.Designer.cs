@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtFullName = new TextBox();
+            txtEmail = new TextBox();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
             label1 = new Label();
@@ -38,15 +38,14 @@
             label4 = new Label();
             SuspendLayout();
             // 
-            // txtFullName
+            // txtEmail
             // 
-            txtFullName.BackColor = Color.AliceBlue;
-            txtFullName.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtFullName.Location = new Point(152, 85);
-            txtFullName.Name = "txtFullName";
-            txtFullName.Size = new Size(336, 35);
-            txtFullName.TabIndex = 0;
-        
+            txtEmail.BackColor = Color.AliceBlue;
+            txtEmail.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtEmail.Location = new Point(152, 85);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(336, 35);
+            txtEmail.TabIndex = 0;
             // 
             // txtUsername
             // 
@@ -56,7 +55,6 @@
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(336, 39);
             txtUsername.TabIndex = 1;
-       
             // 
             // txtPassword
             // 
@@ -67,7 +65,6 @@
             txtPassword.Size = new Size(336, 39);
             txtPassword.TabIndex = 2;
             txtPassword.UseSystemPasswordChar = true;
-           
             // 
             // label1
             // 
@@ -75,10 +72,9 @@
             label1.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(64, 99);
             label1.Name = "label1";
-            label1.Size = new Size(71, 16);
+            label1.Size = new Size(44, 16);
             label1.TabIndex = 3;
-            label1.Text = "Full Name:";
-         
+            label1.Text = "Email:";
             // 
             // label2
             // 
@@ -112,6 +108,7 @@
             btnSave.TabIndex = 6;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // label4
             // 
@@ -136,7 +133,7 @@
             Controls.Add(label1);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
-            Controls.Add(txtFullName);
+            Controls.Add(txtEmail);
             Name = "CreateForms";
             Text = "Form1";
             ResumeLayout(false);
@@ -145,7 +142,7 @@
 
         #endregion
 
-        private TextBox txtFullName;
+        private TextBox txtEmail;
         private TextBox txtUsername;
         private TextBox txtPassword;
         private Label label1;
