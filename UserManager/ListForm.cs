@@ -25,7 +25,14 @@ namespace UserManager
 
         private void ListForm_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("Welcome to User Manager!");
+            UserRepository userRepository = new UserRepository();
 
+            List<UserModel> users = userRepository.GetAll();
+            dgViewUsers.DataSource = users;
         }
-    }
+
+       
+        }
+    
 }

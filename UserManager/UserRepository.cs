@@ -22,6 +22,11 @@ namespace UserManager
 
             _connection.Insert(userModel);
             return true;
+     
+        }
+        public List<UserModel> GetAll()
+        {
+            return _connection.Table<UserModel>().ToList();
         }
     }
 }

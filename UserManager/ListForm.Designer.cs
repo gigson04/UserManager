@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dgViewUsers = new DataGridView();
             label1 = new Label();
             btnNew = new Button();
             button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgViewUsers).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgViewUsers
             // 
-            dataGridView1.BackgroundColor = SystemColors.Control;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(42, 54);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(465, 231);
-            dataGridView1.TabIndex = 0;
+            dgViewUsers.BackgroundColor = SystemColors.Control;
+            dgViewUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgViewUsers.Location = new Point(42, 54);
+            dgViewUsers.Name = "dgViewUsers";
+            dgViewUsers.Size = new Size(465, 231);
+            dgViewUsers.TabIndex = 0;
+    
             // 
             // label1
             // 
@@ -89,18 +90,18 @@
             Controls.Add(button1);
             Controls.Add(btnNew);
             Controls.Add(label1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgViewUsers);
             Name = "ListForm";
             Text = "ListForm";
             Load += ListForm_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgViewUsers).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgViewUsers;
         private Label label1;
         private Button btnNew;
         private Button button1;
